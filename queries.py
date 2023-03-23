@@ -134,6 +134,18 @@ query ($block: Int!, $first: Int!, $skip: Int!)
     }
 }
 """,
+  "rewardByTokens": """
+query ($block: Int!, $first: Int!, $skip: Int!)
+{
+  rewardByTokens (first: $first, skip: $skip)
+  {
+    id 
+    token
+    account
+    rewards
+  }
+}  
+""",
     # TODO probably fix this as some stuff was changed here
     "rewardDayTotals": """
 query ($block: Int!, $first: Int!, $skip: Int!)

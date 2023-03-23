@@ -71,7 +71,6 @@ It will also not ping Etherscan to get the current block to compare with the sub
     - `erc20Transfers`
     - `dailyInvestorTokenBalances`, 
 - Implement some of these as-of-yet unimplemented queries:
-    - `rewardbyToken`
     - `account`
     - `poolsbyAORewardRecipient`
     - `Day`

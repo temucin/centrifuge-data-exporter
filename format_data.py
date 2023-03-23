@@ -47,6 +47,10 @@ def formatter(df, query):
         format_decimal(df, columns_27, 27)
         return df
 
+    if query == "rewardByTokens": 
+        format_decimal(df, ["rewards"], 18)
+        return df
+        
     if query == "dailyPoolDatas":
         columns_18 = [
             "reserve",
